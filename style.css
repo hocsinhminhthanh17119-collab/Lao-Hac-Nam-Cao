@@ -1,3 +1,4 @@
+<style>
 body{
     margin:0;
     font-family:"Times New Roman", serif;
@@ -82,6 +83,8 @@ section{
     text-indent: 30px;
 }
 
+
+/* ĐẢO CHIỀU ĐỐI XỨNG */
 .reverse{
     flex-direction:row-reverse;
 }
@@ -102,3 +105,4 @@ footer{
     padding:20px;
     font-size:16px;
 }
+</style>

@@ -3,7 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <title>Lão Hạc - Truyện ngắn Nam Cao</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+    margin:0;
+    font-family:"Times New Roman", serif;
+    background:url("https://i.pinimg.com/736x/1f/c8/4c/1fc84cdd2ee8c49c5ff6777778e9d97a.jpg") no-repeat center fixed;
+    background-size:cover;
+}
+
+/* ===== HEADER ===== */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgba(90,60,40,0.95);
+    padding:15px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    z-index:1000;
+}
+
+header h1{
+    color:#fff;
+    margin:0;
+    font-size:26px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:18px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* ===== TIÊU ĐỀ ===== */
+.title{
+    margin-top:120px;
+    text-align:center;
+    color:#fff;
+    background:rgba(0,0,0,0.4);
+    padding:40px;
+}
+
+.title h2{
+    font-size:40px;
+    margin:0;
+}
+
+.title p{
+    font-size:22px;
+    margin-top:10px;
+}
+
+/* ===== SECTION ===== */
+section{
+    background:rgba(255,255,255,0.92);
+    margin:50px auto;
+    width:85%;
+    border-radius:15px;
+    padding:30px;
+}
+
+.content{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.content img{
+    width:45%;
+    border-radius:12px;
+}
+
+.content p{
+    width:55%;
+    font-size:18px;
+    line-height:1.8;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+
+/* ĐẢO CHIỀU ĐỐI XỨNG */
+.reverse{
+    flex-direction:row-reverse;
+}
+
+section h3{
+    color:#5a3c28;
+    font-size:32px;
+    font-weight:bold;
+    border-left:6px solid #5a3c28;
+    padding-left:15px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    background:rgba(90,60,40,0.95);
+    color:white;
+    padding:20px;
+    font-size:16px;
+}
+</style>
 </head>
 
 <body>
@@ -62,12 +170,79 @@
     <div class="content">
         <img src="https://cdn2.tuoitre.vn/thumb_w/480/2021/1/12/cau-vang-12-1-1read-only-16104638906931784913998.jpg">
         <p>
-            Truyện ngắn Lão Hạc do nhà văn Nam Cao viết, phản ánh hiện thực nước ta trong khoảng thời gian trước cách mạng tháng Tám. Câu chuyện kể về cuộc đời đầy khó khăn và bế tắc của một người nông dân hiền lành chân chất, tốt bụng, tự trọng và thương con mà mọi người thường gọi là Lão Hạc. ...
+            Truyện ngắn Lão Hạc do nhà văn Nam Cao viết, phản ánh hiện thực nước ta trong khoảng thời gian trước cách mạng tháng Tám. Câu chuyện kể về cuộc đời đầy khó khăn và bế tắc của một người nông dân hiền lành chân chất, tốt bụng, tự trọng và thương con mà mọi người thường gọi là Lão Hạc. Vợ Lão mất sớm, con trai Lão vì gia cảnh không đủ cho thách cưới của nhà gái mà không lấy được vợ đã bỏ đi làm đồn điền cao su nhiều năm không về. Lão sống cùng cậu Vàng, con chó mà con trai Lão mua về. Lão xem cậu Vàng như người bầu bạn và yêu thương thế nhưng sau một trận ốm nặng Lão đành đi đến quyết định bán chó. Sau khi bán chó xong Lão gửi số tiền bán được cộng với tiền dành dụm trước đó cùng với mảnh vườn cho ông Giáo một người hàng xóm của Lão. Những ngày sau đó Lão chỉ ăn khoai, hết khoai thì chế được cái gì sẽ ăn cái đó. Cuộc sống khó khăn nhưng Lão vẫn không nhận sự giúp đỡ của ông Giáo. Một ngày Lão xin Binh Tư ít bả chó nói để bẫy con chó lạc sau vườn, Binh Tư kể với ông Giáo chuyện đó. Sau khi biết tin ông Giáo rất thất vọng và về nhà được một lúc lâu thì ông Giáo lại hay Lão chết, cái chết đột ngột và đau đớn, chẳng ai hiểu chuyện gì xảy ra có lẽ chỉ ông Giáo và Binh Tư mới hiểu được.
         </p>
     </div>
 </section>
 
-<!-- Các section còn lại GIỮ NGUYÊN như bạn gửi -->
+<section id="caunoi">
+    <h3>4. Câu nói tiêu biểu</h3>
+    <div class="content reverse">
+        <img src="https://static.cand.com.vn/Files/Image/linhchi/2021/01/28/thumb_660_ee851afd-693b-4467-abe1-61bbb43a393b.jpg">
+        <p>
+            “Cậu Vàng đi đời rồi, ông giáo ạ!” <br><br>
+            “Lão hu hu khóc, nước mắt chảy ròng ròng.”
+
+
+            "...Chao ôi! Ðối với những người ở quanh ta, nếu ta không cố tìm mà hiểu họ, thì ta chỉ thấy họ gàn dở, ngu ngốc, bần tiện, xấu xa, bỉ ối... toàn những cớ để cho ta tàn nhẫn; không bao giờ ta thấy họ là những người đáng thương; không bao giờ ta thương..."
+
+
+            "....Sự cẩu thả trong bất cứ nghề gì cũng là một sự bất lương rồi. Nhưng sự cẩu thả trong văn chương thì thật là đê tiện. Chao ôi! Hắn đã viết những gì? Toàn những cái vô vị, nhạt nhẽo, gợi những tình cảm rất nhẹ, rất nông, diễn một vài ý rất thông thường quấy loãng trong một thứ văn bằng phẳng và quá ư dễ dãi. Hắn chẳng đem một chút mới lạ gì đến văn chương. Thế nghĩa là hắn là một kẻ vô ích, một người thừa. Văn chương không cần đến những người thợ khéo tay, làm theo một vài kiểu mẫu đưa cho. Văn chương chỉ dung nạp những người biết đào sâu, biết tìm tòi, khơi những nguồn chưa ai khơi, và sáng tạo những cái gì chưa có..."
+        </p>
+    </div>
+</section>
+
+<section id="camnhan">
+    <h3>5. Cảm nhận</h3>
+    <div class="content">
+        <img src="https://cdn.luatminhkhue.vn/lmk/articles/103/517910/suy-nghi-ve-cai-chet-cua-lao-hac-517910.jpg">
+        <p>
+            Trong văn bản "Lão Hạc" của Nam Cao, lão Hạc là hình ảnh điển hình cho những người nông dân Việt Nam trước cách mạng tháng 8 có cuộc sống nghèo khổ nhưng phẩm chất vô cùng cao đẹp. Lão là 1 người giàu lòng yêu thương, sống nhân hậu và có lòng tự trọng cao. Tuy vậy nhưng lão có cuộc sống nghèo khổ, cô đơn. Vợ lão mất sớm, con trai duy nhất thì phẫn chí bỏ đi đồn điền cao su, sống cô đơn với 1 con chó để bầu bạn, tải sản chỉ có 1 mảnh vườn và 1 ít tiền. Sau khi bán cậu Vàng - người bạn duy nhất khi về già, lão thấy hối hận, sống day dứt, dằn vặt, đau xót tột cùng. Lão Hạc là người có ý thức cao về lẽ sống nên sau khi gửi số tiền ít ỏi cho ông giáo thì lão từ chối tất cả cái gì mà ông giáo cho. Vì là người có lòng tự trọng nên sau khi chết lão ko muốn làm phiền tới hàng xóm,nhờ ông giáo lấy số tiền đó để làm ma chay. Mọi người trong làng ko ai hiểu nguyên nhân tại sao lão chết, chỉ có Binh Tư và ông giáo hiểu. Trong xã hội thực dân phong kiến, lão Hạc như ngọn đèn lay lắt trước gió. Qua văn bản "Lão hạc", tác giả đã cho ta thấy phẩm giá tốt đẹp và nhân cách trong sạch của lão Hạc nói riêng cũng như những người nông dân nói chung.
+        </p>
+    </div>
+</section>
+
+<section id="thuvị">
+    <h3>6. Thông tin thú vị</h3>
+    <div class="content reverse">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMYmy339F7pI1MdIlJHfjd9m_ssD9R1YhA_Q&s">
+        <p>
+            "Lão Hạc" (1943) của Nam Cao là truyện ngắn hiện thực sâu sắc về người nông dân trước Cách mạng Tháng Tám, nổi bật với hình tượng người cha yêu con hết mực, giàu lòng tự trọng và cái chết bi thảm. Thông tin thú vị bao gồm: lão coi chó (cậu Vàng) như con, bán chó vì túng quẫn, tự tử bằng bả chó để giữ vườn cho con và không làm phiền hàng xóm. 
+               - Tên gọi "Cậu Vàng": Lão Hạc gọi con chó là "cậu Vàng" một cách trân trọng, âu yếm, thể hiện sự cô đơn và tình cảm sâu nặng khi vợ mất sớm, con trai đi đồn điền cao su.
+               - Bi kịch bán chó và khóc: Sau khi bán cậu Vàng, lão Hạc đau đớn đến mức "hu hu khóc", tự trách mình vì đã trót lừa một con chó.
+               - Sự hi sinh cao thượng: Lão Hạc chọn cái chết vật vã, dữ dội bằng bả chó (xin từ Binh Tư) thay vì tiêu lạm vào tiền dành dụm cho con trai hoặc nhờ vả hàng xóm.
+               - Sự tự trọng đáng kính: Dù đói khát, lão không bán thêm một chút hoa màu nào trong vườn, giữ trọn mảnh vườn cho con trai. Lão đã gửi trước tiền cho ông Giáo nhờ lo ma chay để không phiền hàng xóm.
+               - Cái chết bị hiểu lầm: Cả làng, trừ ông Giáo và Binh Tư, không hiểu tại sao lão lại chết một cách thảm khốc như vậy.
+               - Hoàn cảnh sáng tác: Tác phẩm được viết năm 1943, thời điểm xã hội Việt Nam ngột ngạt trước Cách mạng, phản ánh nỗi khốn cùng nhưng vẫn sáng ngời nhân phẩm của người nông dân.
+               - Ngôn ngữ trần thuật: Truyện được kể qua góc nhìn của nhân vật "ông Giáo", tạo nên giọng văn triết lý, lạnh lùng bề ngoài nhưng ấm nóng tình thương bên trong. 
+            "Lão Hạc" không chỉ là câu chuyện về cái đói, mà là bài ca về tình phụ tử và phẩm giá con người.
+        </p>
+    </div>
+</section>
+<div style="background:rgba(255,255,255,0.92);
+            width:85%;
+            margin:40px auto;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;">
+    <h3>🎬 Video minh họa truyện Lão Hạc</h3>
+
+    <video controls width="100%" style="border-radius:12px;">
+        <source src="laohac.mp4" type="video/mp4">
+    </video>
+<div style="background:rgba(255,255,255,0.92);
+            width:85%;
+            margin:30px auto;
+            padding:20px;
+            border-radius:15px;
+            text-align:center;">
+    <h3>🎧 Audio giới thiệu tác phẩm Lão Hạc</h3>
+
+    <audio controls>
+        <source src="laohac.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ audio.
+    </audio>
+</div>
 
 <footer>
     2025-website văn học- Đào Như Ngọc
